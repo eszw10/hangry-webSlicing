@@ -2,11 +2,21 @@
 export default {
   content: [
       "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}"
+      "./src/**/*.{js,ts,jsx,tsx}",
+      'node_modules/flowbite-react/lib/esm/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#A30926',
+        'dark' : '#303030',
+        'accent':'#5A5A5A',
+        'dark-accent':'#707070',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 

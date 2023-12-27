@@ -1,13 +1,19 @@
+import BulkOrder from "./components/BulkOrder";
+import CardContainer from "./components/CardContainer";
+import FindUs from "./components/FindUs";
+import Hero from "./components/Hero";
 import Nav from "./components/Nav"
-import { Button } from 'flowbite-react';
+import data from "./data";
 
 
 function App() {
   return (
-    <div className="text-dark">
+    <div className="text-dark w-full">
       <Nav/>
-      <h1 className='text-red-500 text-lg font-bold'>This is Hangry web-slicing</h1>
-      <Button>Click me</Button>
+      <Hero/>
+      <CardContainer data={data}/>
+      <FindUs/>
+      <BulkOrder/>
     </div>
   )
 }

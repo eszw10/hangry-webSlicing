@@ -15,20 +15,23 @@ body {
   padding: 0;
 }
 
-.nav-hover::after {
+.nav-underline-animation::after {
   content: '';
   display: block;
   width: 0;
   height: 2px;
   background: #A30926;
   transition: width 0.3s ease-in-out;
-
 }
 
-.nav-hover:hover::after {
-  width: 100%; /* Full width on hover */
+.nav-underline-animation:hover::after {
+  width: 100%;
 }
 
 .nav-hover {
   @apply hover:text-dark !important
+}
+
+.nav-hover-primary {
+  @apply hover:text-primary !important
 }
